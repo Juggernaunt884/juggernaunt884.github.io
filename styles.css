@@ -176,7 +176,7 @@ body{
     margin-left: 0;
     overflow: hidden;
     white-space: nowrap;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
     font-family: "poppins", sans-serif;
     font-weight: 600;
 }
@@ -184,7 +184,7 @@ body{
     opacity: 1;
     max-width: 200px;
     margin-left: 1px;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
     padding: 0 10px;
 }
 

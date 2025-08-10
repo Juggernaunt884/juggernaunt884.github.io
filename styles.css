@@ -122,7 +122,7 @@ body{
     gap: 1rem;
     flex-direction: row;
 }
-.buttons a{
+/* .buttons a{
     text-decoration: none;
     color: #000;
     background: white;
@@ -140,6 +140,49 @@ body{
     border: white 2px solid;
     transform: translateY(-5px);
     transition: all 0.3s ease;
+} */
+
+.buttons a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.buttons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 0;
+  transition: width 0.4s ease;
+}
+
+
+.buttons a span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.buttons a:hover::before {
+  width: 100%;
+}
+
+.buttons a:hover span {
+  color: #000;
 }
 .social-buttons-container{
     display: flex;
@@ -201,7 +244,7 @@ body{
     display: flex;
     flex-direction: column;
     flex: 6 6 60%;
-    padding: 0 50px;
+    padding-left: 150px;
     text-align: left;
     gap: 20px;
 }
@@ -238,25 +281,36 @@ body{
     justify-content: center;
     align-items: center;
 }
+.about-pic img{
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
 
 
 @media(max-width: 880px){
     .navbar-container .navbar-menu{
-        display: none;
+        /* display: none; */
+        background-color: #000e;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.7rem !important;
         position: absolute;
         height: 100vh;
-        width: 250px;
+        width: 0px;
         top: 0;
-        right: 0;
+        right: -250px;
         padding: 5rem 1.5rem;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
+        transition: all 0.3s ease-in-out;
     }
     .navbar-container .navbar-menu.active{
         display: flex;
+        right: 0px;
+        transition: all 0.3s ease-in-out;
+        width: 250px;
     }
     .navbar-toggle{
         display: block;
@@ -280,6 +334,21 @@ body{
         justify-content: center;
         text-align: center;
         padding: 50px 0;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        padding: 0 1rem;
+    }
+    .about-info{
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .about-pic img{
+        width: 300px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     }
 }
 @media (max-width: 400px) {

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Awais | Web Developer & Ux/Ui Designer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Decor.css">
+    <link rel="stylesheet" href="Decor.css">    
+    <link rel="stylesheet" href="card.css" />
     <link rel="icon" href="Favicon.svg" type="image/x-icon">
     <meta name="description" content="Portfolio of Muhammad Awais, showcasing web development and UX/UI design skills.">
     <meta name="keywords" content="Web Developer, UX/UI Designer, Portfolio, Muhammad Awais, Frontend Developer, Web Design, User Experience, User Interface">
@@ -135,7 +136,39 @@
                 </table>
             </div>
             <div id="about-pic">
-                <img src="Profile.jpg" alt="Profile Picture">
+                <div class="card">
+                    <div class="card-image">
+                        <img
+                        src="Profile.jpg"
+                        alt="image"
+                        />
+                    </div>
+                    
+                    
+        
+                    <!-- Custom cursor element -->
+                    <div class="custom-cursor">
+                        <div class="cursor-icon">
+                            <svg
+                                style="rotate: -70deg"
+                                stroke="currentColor"
+                                fill="currentColor"
+                                viewBox="0 0 16 16"
+                                height="20"
+                                width="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div class="name-tag">
+                            <p>Muhammad Awais</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="Profile.jpg" alt="Profile Picture"> -->
                 <!-- From Uiverse.io by Sharkotech --> 
                 <!-- <div class="main">
                     <div class="card" id="c1"></div>
@@ -145,10 +178,16 @@
                 </div> -->
             </div>
         </section>
-        <section id="skills"><h2>Skills</h2></section>
+        <section id="skills">
+            <h2>Skills</h2>
+
+            
+        </section>
         <section id="certifications"><h2>Certifications</h2></section>
         <section id="contact"><h2>Contact</h2></section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="card.js"></script>
     <script src="javascript.js"></script>
     <script src="https://kit.fontawesome.com/4cfda748cf.js" crossorigin="anonymous"></script>
 </body>

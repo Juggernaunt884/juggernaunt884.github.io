@@ -316,13 +316,13 @@ h2{
         display: block;
         z-index: 1001;
     }
-    .navbar-toggle.active .bar:nth-child(2){
+    #navbar-toggle.active .bar:nth-child(2){
         opacity: 0;
     }
-    .navbar-toggle.active .bar:nth-child(1){
+    #navbar-toggle.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
-    .navbar-toggle.active .bar:nth-child(3){
+    #navbar-toggle.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
     #hero{

@@ -15,6 +15,18 @@ body{
 main{
     max-width: 1400px;
 }
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
 #navbar{
     display: flex;
     align-items: center;
@@ -49,7 +61,7 @@ main{
     gap: 1.5rem;
     list-style: none;
 }
-#navbar-menu li a{
+#navbar-menu li .nav-link{
     color: #fff;
     text-decoration: none;
     font-size: 1.3rem;
@@ -60,10 +72,15 @@ main{
     transition: all 0.7s ease;
     white-space: nowrap;  
 }
-#navbar-menu li a:hover{
+#navbar-menu li .nav-link:hover{
     background: #fffa;
     color: #000;
     border: 2px solid #fff;
+}
+#navbar-menu li .nav-link.active{
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
 }
 #navbar-toggle{
     display: none;
@@ -79,14 +96,6 @@ main{
     background: #fff;
     margin: 5px auto;
     transition: all 0.3s ease;
-}
-#hero{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
 }
 .hero-decor{
     display: flex;
@@ -233,13 +242,6 @@ main{
     padding: 0 10px;
 }
 
-#about{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 90vh;
-}
 #about-info{
     display: flex;
     flex-direction: column;
@@ -247,11 +249,6 @@ main{
     padding-left: 150px;
     text-align: left;
     gap: 20px;
-}
-#about-info h2{
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.2;
 }
 #about-info p{
     font-size: 1.2rem;

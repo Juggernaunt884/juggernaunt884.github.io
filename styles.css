@@ -73,8 +73,6 @@ h2{
     white-space: nowrap;  
 }
 #navbar-menu li .nav-link:hover{
-    background: #fffa;
-    color: #000;
     border: 2px solid #fff;
 }
 #navbar-menu li .nav-link.active{

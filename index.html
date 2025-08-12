@@ -6,7 +6,8 @@
     <title>Muhammad Awais | Web Developer & Ux/Ui Designer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Decor.css">    
-    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="card.css" /> 
+    <link rel="stylesheet" href="skill.css" />
     <link rel="icon" href="Favicon.svg" type="image/x-icon">
     <meta name="description" content="Portfolio of Muhammad Awais, showcasing web development and UX/UI design skills.">
     <meta name="keywords" content="Web Developer, UX/UI Designer, Portfolio, Muhammad Awais, Frontend Developer, Web Design, User Experience, User Interface">
@@ -178,16 +179,73 @@
                 </div> -->
             </div>
         </section>
-        <section id="skills">
-            <h2>Skills</h2>
+        <!-- Skills ↔ Projects Section -->
+        <section class="skills-projects-section" id="skills">
+            <div class="container">
+                <!-- Skills Column -->
+                <div class="column">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill" data-skill="html">HTML5</div>
+                    <div class="skill" data-skill="css">CSS3</div>
+                    <div class="skill" data-skill="js">JavaScript</div>
+                    <div class="skill" data-skill="wp">WordPress</div>
+                    <div class="skill" data-skill="elementor">Elementor</div>
+                    <div class="skill" data-skill="woocommerce">WooCommerce</div>
+                    <div class="skill" data-skill="figma">Figma</div>
+                    <div class="skill" data-skill="ux">UX Design</div>
+                    <div class="skill" data-skill="uxr">UX Research</div>
+                    <div class="skill" data-skill="usability">Usability Testing</div>
+                    <div class="skill" data-skill="wireframing">Wireframing</div>
+                    <div class="skill" data-skill="prototyping">Prototyping</div>
+                    <div class="skill" data-skill="branding">Branding</div>
+                    <div class="skill" data-skill="responsive">Responsive Design</div>
+                    <div class="skill" data-skill="communication">Communication</div>
+                </div>
+                </div>
 
-            
+                <!-- Projects Column -->
+                <div class="column">
+                <h2>Projects</h2>
+                <div class="projects-list">
+                    <div class="project" data-skills="html,css,wp,elementor">
+                    <div class="project-title">Sindhri Restaurant Demo</div>
+                    <div class="project-desc">Responsive restaurant website built with WordPress + Elementor.</div>
+                    </div>
+                    <div class="project" data-skills="html,css,js,figma,ux">
+                    <div class="project-title">Landing Page Prototype</div>
+                    <div class="project-desc">Figma to live HTML/CSS/JS landing page with UX improvements.</div>
+                    </div>
+                    <div class="project" data-skills="wp,woocommerce,css,figma">
+                    <div class="project-title">Small Business eCommerce</div>
+                    <div class="project-desc">WooCommerce shop setup with custom Elementor styling.</div>
+                    </div>
+                    <div class="project" data-skills="uxr,usability,figma,wireframing,prototyping">
+                    <div class="project-title">CtrlAlt Shop – UX Design Case Study</div>
+                    <div class="project-desc">
+                        Mobile e-commerce concept for gaming gear. 
+                        <a href="https://drive.google.com/file/d/1Mku4B2tyCME5JuWsHLbX8Vj01tVByW1l/view?usp=drivesdk" target="_blank">Case Study</a>
+                    </div>
+                    </div>
+                    <div class="project" data-skills="ux,wp,elementor,branding,responsive,communication">
+                    <div class="project-title">Freelancer Portfolios Initiative</div>
+                    <div class="project-desc">5 custom portfolio sites for creatives using WordPress & Elementor.</div>
+                    </div>
+                    <div class="project" data-skills="html,css,js,responsive">
+                    <div class="project-title">Portfolio Website</div>
+                    <div class="project-desc">This portfolio site built with HTML, CSS, and JavaScript.</div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </section>
+
         <section id="certifications"><h2>Certifications</h2></section>
         <section id="contact"><h2>Contact</h2></section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="card.js"></script>
+    <script src="skill.js"></script>
     <script src="javascript.js"></script>
     <script src="https://kit.fontawesome.com/4cfda748cf.js" crossorigin="anonymous"></script>
 </body>

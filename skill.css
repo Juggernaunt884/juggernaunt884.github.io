@@ -47,6 +47,7 @@
   padding: 12px;
   border-radius: 8px;
   cursor: pointer;
+  gap: 8px;
   transition: background 0.3s, transform 0.2s;
 }
 .project.highlight {
@@ -60,12 +61,14 @@
 }
 .project-desc {
   font-size: 0.9em;
+  margin: 10px 0;
 }
-a {
+.projects-link {
+  font-size: 1rem;
   color: #66b3ff;
   text-decoration: none;
 }
-a:hover {
+.project-link:hover {
   text-decoration: underline;
 }
 
